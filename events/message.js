@@ -13,7 +13,7 @@ module.exports = (client, message) => {
         }
     }
 
-    const poggies = client.emojis.find(emoji => emoji.name === "sadge");
+    const sadge = client.emojis.find(emoji => emoji.name === "sadge");
     // message.channel.send(`${poggies}`);
     message.react(sadge.id)
 
