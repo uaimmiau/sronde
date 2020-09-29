@@ -13,9 +13,9 @@ module.exports = (client, message) => {
         }
     }
 
-    const poggies = client.emojis.find(emoji => emoji.name === "poggies");
+    const poggies = client.emojis.find(emoji => emoji.name === "sadge");
     // message.channel.send(`${poggies}`);
-    message.react(poggies.id)
+    message.react(sadge.id)
 
     // Ignore messages not starting with the prefix (in config.json)
     if (message.content.indexOf(client.config.prefix) !== 0) return;
