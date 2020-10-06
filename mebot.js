@@ -65,3 +65,9 @@ const init = async () => {
 };
 
 init();
+
+// {
+//     "token": "NzU4MDYxODYyMTA4NTdupaI4Njgw.X2peIA.-h_XclT_V2J5zRIho67tyC3VsCg",
+//     "prefix": "!",
+//     "ownerID": "541176522841522196"
+// }
