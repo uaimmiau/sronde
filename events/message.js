@@ -8,7 +8,7 @@ module.exports = (client, message) => {
 
   //check if message starts with something which we can respond to in a hilarious way
   for (var property in responseObject) {
-    if (message.content.toLowerCase().startsWith(property)) {
+    if (message.content.toLowerCase().includes(property)) {
       message.channel.send(responseObject[property]);
     }
   }
