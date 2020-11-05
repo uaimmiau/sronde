@@ -7,7 +7,7 @@ module.exports = (client, message) => {
   const responseObject = require("../pressX/responseObject.json");
 
   //check if message starts with something which we can respond to in a hilarious way
-  if(message.author.id == "129665935421210625"){
+  if(message.author.id == "129665935421210625" && message.content.toLowerCase().includes("wolffe")){
     message.reply("Jesteś ty z siebie dumny żaba(specjalnie z małej), masz ty rozum i godność człowieka?");
   }else{
     for (var property in responseObject) {
