@@ -8,7 +8,7 @@ module.exports = (client, message) => {
 
   //check if message starts with something which we can respond to in a hilarious way
   if(message.author.id == "129665935421210625"){
-    message.channel.reply("Jesteś ty z siebie dumny żaba(specjalnie z małej), masz ty rozum i godność człowieka?");
+    message.reply("Jesteś ty z siebie dumny żaba(specjalnie z małej), masz ty rozum i godność człowieka?");
   }else{
     for (var property in responseObject) {
       if (message.content.toLowerCase().includes(property)) {
