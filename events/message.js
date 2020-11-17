@@ -11,7 +11,7 @@ module.exports = (client, message) => {
     message.reply("Jesteś ty z siebie dumny żaba(specjalnie z małej), masz ty rozum i godność człowieka?");
   } else {
     for (var property in responseObject) {
-      if (message.content.toLowerCase().includes(property)) {
+      if (message.content.toLowerCase().includes(property.toLowerCase())) {
         console.log(property)
         message.channel.send(responseObject[property]);
       }
