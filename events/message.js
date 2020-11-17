@@ -14,6 +14,7 @@ module.exports = (client, message) => {
       if (message.content.toLowerCase().includes(property.toLowerCase())) {
         console.log(property)
         message.channel.send(responseObject[property]);
+        return
       }
     }
   }
