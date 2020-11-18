@@ -5,7 +5,7 @@ module.exports = (client, message) => {
   if (!message.guild) return;
 
   const responseObject = require("../pressX/responseObject.json");
-
+  const dziady = require("../pressX/dziady.json");
   //check if message starts with something which we can respond to in a hilarious way
   if (message.author.id == "129665935421210625" && message.content.toLowerCase().includes("wolffe") && Math.floor(Math.random() * 10) == 9) {
     message.reply("Jesteś ty z siebie dumny żaba(specjalnie z małej), masz ty rozum i godność człowieka?");
@@ -16,6 +16,12 @@ module.exports = (client, message) => {
         message.channel.send(responseObject[property]);
         return
       }
+    }
+  }
+  for (let prop in dziady) {
+    if (message.content.toLowerCase() == prop.toLocaleLowerCase()) {
+      message.channel.send(dziady[prop]);
+      return
     }
   }
 
